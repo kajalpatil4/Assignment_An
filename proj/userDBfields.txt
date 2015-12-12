@@ -1,0 +1,12 @@
+userName
+password
+dateOfBirthMonth
+dateOfBirthDay
+dateOfBirthYear
+email
+gender
+seekingGenger
+countryCode
+State
+City
+Zip

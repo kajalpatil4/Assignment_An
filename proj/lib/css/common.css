@@ -1,0 +1,302 @@
+.default
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.defaultSmall
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.bold
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.std
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.stdSmall
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.stdBold
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.stdBoldSmall
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.profile
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.header
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.footer
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.error
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.message
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.grid
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.footer
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.profileLarge
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.btnLink
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+TD
+{
+    FONT-SIZE: x-small;
+    FONT-FAMILY: verdana
+}
+.nav
+{
+    FONT-SIZE: 8pt
+}
+.navMain
+{
+    FONT-SIZE: 8pt
+}
+.navBold
+{
+    FONT-SIZE: 8pt
+}
+.bold
+{
+    FONT-WEIGHT: bold
+}
+.boldSmall
+{
+    FONT-WEIGHT: bold
+}
+.stdBold
+{
+    FONT-WEIGHT: bold
+}
+.stdBoldSmall
+{
+    FONT-WEIGHT: bold
+}
+.header
+{
+    FONT-WEIGHT: bold
+}
+.subHeader
+{
+    FONT-WEIGHT: bold
+}
+.profile
+{
+    FONT-WEIGHT: bold
+}
+.error
+{
+    FONT-WEIGHT: bold
+}
+.message
+{
+    FONT-WEIGHT: bold
+}
+.grid
+{
+    FONT-WEIGHT: bold
+}
+.profileLarge
+{
+    FONT-WEIGHT: bold
+}
+.navMain
+{
+    FONT-WEIGHT: bold
+}
+.navBold
+{
+    FONT-WEIGHT: bold
+}
+.std
+{
+    TEXT-DECORATION: none
+}
+.std:visited
+{
+    TEXT-DECORATION: none
+}
+.stdBold
+{
+    TEXT-DECORATION: none
+}
+.stdBold:visited
+{
+    TEXT-DECORATION: none
+}
+.stdBoldSmall
+{
+    TEXT-DECORATION: none
+}
+.stdBoldSmall:visited
+{
+    TEXT-DECORATION: none
+}
+.footer
+{
+    TEXT-DECORATION: none
+}
+.footer:visited
+{
+    TEXT-DECORATION: none
+}
+.nav
+{
+    TEXT-DECORATION: none
+}
+.nav:visited
+{
+    TEXT-DECORATION: none
+}
+.navMain
+{
+    TEXT-DECORATION: none
+}
+.navMain:visited
+{
+    TEXT-DECORATION: none
+}
+.btnLink
+{
+    TEXT-DECORATION: none
+}
+.btnLink:hover
+{
+    TEXT-DECORATION: none
+}
+.std:hover
+{
+    TEXT-DECORATION: underline
+}
+.stdBold:hover
+{
+    TEXT-DECORATION: underline
+}
+.stdBoldSmall:hover
+{
+    TEXT-DECORATION: underline
+}
+.nav:hover
+{
+    TEXT-DECORATION: underline
+}
+.navMain:hover
+{
+    TEXT-DECORATION: underline
+}
+.defaultSmall
+{
+    FONT-SIZE: xx-small
+}
+.stdSmall
+{
+    FONT-SIZE: xx-small
+}
+.boldSmall
+{
+    FONT-SIZE: xx-small
+}
+.stdBoldSmall
+{
+    FONT-SIZE: xx-small
+}
+.footer
+{
+    FONT-SIZE: xx-small
+}
+.profileLarge
+{
+    FONT-SIZE: small
+}
+.navMain
+{
+    COLOR: #ffffff
+}
+.footer
+{
+    COLOR: #808080
+}
+.error
+{
+    COLOR: #ff0000
+}
+.btnLink
+{
+    COLOR: #000000
+}
+.default:visited
+{
+    COLOR: #0000ff
+}
+.defaultSmall:visited
+{
+    COLOR: #0000ff
+}
+.bold:visited
+{
+    COLOR: #0000ff
+}
+.boldSmall:visited
+{
+    COLOR: #0000ff
+}
+.message
+{
+    COLOR: #0000ff
+}
+.btnLink:hover
+{
+    COLOR: #0000ff
+}
+.grid
+{
+    BORDER-RIGHT: thin solid;
+    BORDER-TOP: thin solid;
+    BORDER-LEFT: thin solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: thin solid;
+    BACKGROUND-COLOR: #eeeeee
+}
+.subHeader
+{
+    BACKGROUND-COLOR: #fafafa
+}

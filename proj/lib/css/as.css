@@ -1,0 +1,177 @@
+.std
+{
+    COLOR: #962a2a
+}
+.stdSmall
+{
+    COLOR: #962a2a
+}
+.stdBold
+{
+    COLOR: #962a2a
+}
+.stdBoldSmall
+{
+    COLOR: #962a2a
+}
+.std:visited
+{
+    COLOR: #962a2a
+}
+.stdBold:visited
+{
+    COLOR: #962a2a
+}
+.header
+{
+    COLOR: #962a2a
+}
+.nav
+{
+    COLOR: #962a2a
+}
+.profile
+{
+    COLOR: #962a2a
+}
+.profileLarge
+{
+    COLOR: #962a2a
+}
+.header
+{
+    BACKGROUND-COLOR: #e6e6e6
+}
+.frame
+{
+    BORDER-RIGHT: #d0cfc4 1px solid;
+    BORDER-TOP: #d0cfc4 1px solid;
+    BORDER-LEFT: #d0cfc4 1px solid;
+    BORDER-BOTTOM: #d0cfc4 1px solid;
+    BACKGROUND-COLOR: #f8f8f2
+}
+.panel
+{
+    BACKGROUND-COLOR: #f8f8f2
+}
+.stdButton
+{
+    BORDER-RIGHT: #d85026 1px solid;
+    BORDER-TOP: #d85026 1px solid;
+    BORDER-LEFT: #d85026 1px solid;
+    BORDER-BOTTOM: #d85026 1px solid
+}
+.link
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana
+}
+.linkbold
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana
+}
+.microProfile2
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana
+}
+.sectionTitle
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana
+}
+.b1
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana
+}
+.link
+{
+    COLOR: #972a2a
+}
+.linkbold
+{
+    COLOR: #972a2a
+}
+.link
+{
+    FONT-WEIGHT: normal
+}
+.linkbold
+{
+    FONT-WEIGHT: bold
+}
+.microProfile1
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Verdana
+}
+.sectionTitle
+{
+    FONT-WEIGHT: bold;
+    COLOR: #607371;
+    BACKGROUND-COLOR: #fafafa
+}
+.tborder
+{
+    BACKGROUND-COLOR: #d0cfc4
+}
+.ttitle
+{
+    BACKGROUND-COLOR: #ffedcf
+}
+.rowline
+{
+    BACKGROUND-COLOR: #d0cfc4
+}
+.b1
+{
+    FONT-WEIGHT: bold
+}
+.t3
+{
+    FONT-WEIGHT: bold;
+    COLOR: #607371;
+    FONT-FAMILY: Verdana
+}
+.t4
+{
+    FONT-WEIGHT: bold;
+    COLOR: #607371;
+    FONT-FAMILY: Verdana
+}
+.t3
+{
+    FONT-SIZE: 13pt
+}
+.t4
+{
+    FONT-SIZE: 15pt
+}
+.headline1
+{
+    FONT-WEIGHT: bold;
+    COLOR: #3c4444;
+    FONT-FAMILY: verdana;
+    TEXT-DECORATION: none
+}
+.headline2
+{
+    FONT-WEIGHT: bold;
+    COLOR: #3c4444;
+    FONT-FAMILY: verdana;
+    TEXT-DECORATION: none
+}
+.headline1
+{
+    FONT-SIZE: 8pt
+}
+.headline2
+{
+    FONT-SIZE: 9pt
+}
+.ttitleLight
+{
+    BACKGROUND-COLOR: #f8f8f2
+}
