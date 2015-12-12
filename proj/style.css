@@ -5,5 +5,22 @@ html{
 
 body{
 	font-family: 'Roboto', sans-serif;
-	font-size: 10px;
+	font-size: 12px;
+	background-image:url("images/brickwall.png");
+	background-repeat:repeat; 
+}
+
+
+
+/*==============footer=================*/
+
+.footer-outer{
+	margin-top: 30px;
+	background-color: #111 !important;
+	width: 100%;
+}
+
+.footer-container{
+	color: #ddd;
+	padding: 7px 0 7px 0;
 }

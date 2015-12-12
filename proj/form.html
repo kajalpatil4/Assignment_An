@@ -1,20 +1,64 @@
 <html>
 <head>
 <title>File Upload</title>
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
 </head>
 <body>
-<form action=jsp1.jsp enctype="MULTIPART/FORM-DATA" method=post>
-Author: <input type=text name=author>
-<br>
-Company: <input type=text name=company>
-<br>
-Comment: <textarea name=comment></textarea>
-<br>
-Select file to upload <input type=file name=filename>
-<br>
-Description: <input type=text name=description>
-<br>
-<input type=submit value="Upload">
-</form>
+	<div class="container"> 
+        <div class="row">
+         	<div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+				<form action=jsp1.jsp enctype="MULTIPART/FORM-DATA" method=post>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">	Author	</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<input type="text" name="author"  maxlength="25" size="20" class="form-control" placeholder="Author">
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">  Company	</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<input type="text" name="company" maxlength="40" size="20" class="form-control" placeholder="Company">
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">	Select file to upload	</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<input type="file" name="filename" >
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">  Description	</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<input type="text" name="description" maxlength="100" size="20" class="form-control" placeholder="Description here">
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+							<input type=submit class="btn btn-primary" value="Upload">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+<div class="footer-outer">
+	<div class="container">
+		<div class="footer-container">
+			<h3> CSE Project</h3>
+		<div>
+	</div>
+</div>
+
 </body>
 </html>
+

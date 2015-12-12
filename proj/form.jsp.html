@@ -1,15 +1,60 @@
 <HTML>
 <HEAD>
 <TITLE>File Upload</TITLE>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
 </HEAD>
-<BODY>
-<FORM ACTION=bean_test.jsp ENCTYPE="MULTIPART/FORM-DATA" METHOD=POST>
-Author: <INPUT TYPE=TEXT Name=Author><BR>
-Company: <INPUT TYPE=TEXT Name=Company><BR>
-Comment: <TEXTAREA NAME=Comment></TEXTAREA><BR>
-Select file to upload <INPUT TYPE=FILE Name=Filename><BR>
-Description: <INPUT TYPE=TEXT Name=Description><BR>
-<INPUT TYPE=SUBMIT VALUE="Upload">
-</FORM>
+	<BODY>
+		<div class="container"> 
+            <div class="row">
+            	<div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+					<FORM ACTION=bean_test.jsp ENCTYPE="MULTIPART/FORM-DATA" METHOD=POST>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">	Author	</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<input type="text" name="Author"  maxlength="25" size="20" class="form-control" placeholder="Author">
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">  Company	</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<input type="text" name="Company" maxlength="40" size="20" class="form-control" placeholder="Company">
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">  Comment	</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<input type="textarea" name="Comment" maxlength="40" size="20" class="form-control" placeholder="comment here">
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">	Select file to upload	</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<input type="file" name="Filename" >
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">  Description	</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<input type="text" name="Description" maxlength="100" size="20" class="form-control" placeholder="Description here">
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+							<input type=submit class="btn btn-primary" value="Upload">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </BODY>
 </HTML>
