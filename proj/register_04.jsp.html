@@ -6,8 +6,12 @@
 	<script language="JavaScript" src="im/im.js"></script>
 	<link rel="stylesheet" type="text/css" href="lib/css/as.css">
 	<link rel="stylesheet" type="text/css" href="lib/css/common.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<body marginheight=0 marginwidth=0 topmargin=0 leftmargin=0 text="#000000" bgcolor="#ffffff" >
+<body >
 <%
    String userName = request.getParameter( "UserName" );
    String password = request.getParameter( "Password" );
@@ -64,174 +68,204 @@
    String aboutMe2 = request.getParameter( "AboutMe" );
 
 %>
+<div class="container"> 
+            <div class="row">
+            	<div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+            	 <div class="row">
+              		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                		<center><H4>You have entered</H4></center>
+              		</div>              
+        		</div> <br/>
+        		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">User Name</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= userName %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Password</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= password %></div>
+         		</div>
+				<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Date of Birth</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= dobMonth %>/<%= dobDay %>/<%= dobYear %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Email</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= email %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Gender</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= gender %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Seeking</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= seekingGender %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Country</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= country %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">State</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= state %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">City</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= city %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Zip</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= zip %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">About Me</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= aboutMe1 %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Upload Picture</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= picturePath %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Height</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= height %>cm</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Weight</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= weight %>gms</div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Emphasis Of Studies</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= study %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Relocate for the right person</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= relocate %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Profile Headline</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= headline %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Occupation</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= occupation %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Occupation Description</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= occupationDescription %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Area I Grew Up In</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= grewUpIn %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Zodiac Sign</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= zodiacSign %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Languages I speak</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= languages %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">I am seeking</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= relationType %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Marital Status</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= maritalStatus %></div>
+         		</div>
+    			<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Hair Color</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= hairColor %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Annual Income</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= income %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Education Level</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= education %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Body Build</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= bodyType %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">How important is appearance</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= appearanceImportance %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Religion</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= religion %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Eye Color</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= eyes %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Ethnicity</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= ethnicity %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Political View</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= politics %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Intelligence</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= intelligenceImportance %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Smoking Habits</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= smoking %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Activity Level</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= activity %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Children</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= hasChildren %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Drinking Habits</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= drinking %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Want Children</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= wantsChildren %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Personality</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= aboutMe2 %></div>
+         		</div>
+         		<br/>
+         		 <div class="row">
+              		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                		<td class="message" >Saved Step 2</td>
+              		</div>              
+        		</div> <br/>
 
-<table bgcolor="#EFEFFF" border=2 cellspacing=2 cellpadding=2>
-<TR>
-   <TD>You have entered: </TD>
-</TR>
-
-<TR>
-   <TD>
-      <B>User Name: </B><I><%= userName %></I><BR>
-      <B>Password: </B><I><%= password %></I><BR>
-      <B>Date of Birth: </B><I><%= dobMonth %>/<%= dobDay %>/<%= dobYear %></I><BR>
-      <B>Email: </B><I><%= email %></I><BR>
-      <B>Gender: </B><I><%= gender %></I><BR>
-      <B>Seeking: </B><I><%= seekingGender %></I><BR>
-      <B>Country: </B><I><%= country %></I><BR>
-      <B>State: </B><I><%= state %></I><BR>
-      <B>City: </B><I><%= city %></I><BR>
-      <B>Zip: </B><I><%= zip %></I><BR>
-      <B>About Me: </B><I><%= aboutMe1 %></I><BR>
-      <B>Upload Picture: </B><I><%= picturePath %></I><BR>
-   </TD>
-
-   <TD>
-      <B>Height: </B><I><%= height %> cm</I><BR>
-      <B>Weight: </B><I><%= weight %> grams</I><BR>
-      <B>Emphasis Of Studies: </B><I><%= study %></I><BR>
-      <B>Relocate for the right person: </B><I><%= relocate %></I><BR>
-      <B>Profile Headline: </B><I><%= headline %></I><BR>
-      <B>Occupation: </B><I><%= occupation %></I><BR>
-      <B>Occupation Description: </B><I><%= occupationDescription %></I><BR>
-      <B>Area I Grew Up In: </B><I><%= grewUpIn %></I><BR>
-      <B>Zodiac Sign: </B><I><%= zodiacSign %></I><BR>
-      <B>Languages I speak: </B><I><%= languages %></I><BR>
-      <B>I am seeking: </B><I><%= relationType %></I><BR>
-      <B>Marital Status: </B><I><%= maritalStatus %></I><BR>
-   </TD>
-
-   <TD>
-      <B>Hair Color: </B><I><%= hairColor %></I><BR>
-      <B>Annual Income: </B><I><%= income %></I><BR>
-      <B>Education Level: </B><I><%= education %></I><BR>
-      <B>Body Build: </B><I><%= bodyType %></I><BR>
-      <B>How important is appearance: </B><I><%= appearanceImportance %></I><BR>
-      <B>Religion: </B><I><%= religion %></I><BR>
-      <B>Eye Color: </B><I><%= eyes %></I><BR>
-      <B>Ethnicity: </B><I><%= ethnicity %></I><BR>
-      <B>Political View: </B><I><%= politics %></I><BR>
-      <B>Intelligence: </B><I><%= intelligenceImportance %></I><BR>
-      <B>Smoking Habits: </B><I><%= smoking %></I><BR>
-      <B>Activity Level: </B><I><%= activity %></I><BR>
-      <B>Children: </B><I><%= hasChildren %></I><BR>
-      <B>Drinking Habits: </B><I><%= drinking %></I><BR>
-      <B>Want Children: </B><I><%= wantsChildren %></I><BR>
-      <B>Personality: </B><I><%= aboutMe2 %></I><BR>
-   </TD>
-</TR>
-</TABLE>
-
-<table cellspacing="5" cellpadding="5" border="5" >
-<tr>
-	<td valign="top" width="645">
-		<table width="100%" cellspacing="4" cellpadding="4" border='0' >
-			<tr>
-			<td class="message">
-				<table class="message" cellpadding="0" cellspacing="0" >
-					<tr>
-						<td>
-							<table cellpadding="0" cellspacing="0" >
-								<tr>
-									<td>
-										<table width="100%" cellpadding="5" cellspacing="0" >
-											<tr>
-												<td><img src="images/page_message.gif" ></td>
-												<td class="message" >Saved Step 2</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	
-	<a name="Personality"></a>
-	<table width="640" cellpadding="0" cellspacing="0" >
+		<a name="Personality"></a>
 		<form name="step3form" method="post" action="register_05.jsp" onSubmit="return validateFormstep3form()">
-			<tr>
-				<td colspan="3"><img src="images/topline.gif" width="369" height="26" border="0">
-				</td>
-			</tr>
-			
-			<tr>
-				<td colspan=3>Check all boxes below that apply to you. Don't forget to save your information by clicking on the 'Save' button at the bottom of the page.</td>
-			</tr>
-			
-			<tr>
-				<td colspan=3>&nbsp;</td>
-			</tr>
-			
-			<tr>
-				<td colspan=2 class="stdBold">My personality traits:</td>
-			</tr>
-			
-			<tr>
-				<td colspan=3>&nbsp;
-					<table cellpadding="0" cellspacing="0" >
-						<tr>
-							<td nowrap>
-								<input type="checkbox" name="PersonalityTrait" value="Adventurous/Wild/Spontaneous" > Adventurous/Wild/Spontaneous<br>
-								<input type="checkbox" name="PersonalityTrait" value="Argumentative" > Argumentative<br>
-								<input type="checkbox" name="PersonalityTrait" value="Artistic" > Artistic<br>
-								<input type="checkbox" name="PersonalityTrait" value="Compulsive" > Compulsive<br>
-								<input type="checkbox" name="PersonalityTrait" value="Conservative/Clean Cut" > Conservative/Clean Cut<br>
-								<input type="checkbox" name="PersonalityTrait" value="Earthy" > Earthy<br>
-								<input type="checkbox" name="PersonalityTrait" value="Easygoing/Flexible/Open-Minded" > Easygoing/Flexible/Open-Minded<br>
-								<input type="checkbox" name="PersonalityTrait" value="Eccentric" > Eccentric<br>
-								<input type="checkbox" name="PersonalityTrait" value="Flamboyant" > Flamboyant<br>
-								<input type="checkbox" name="PersonalityTrait" value="Flirtatious/Playful" > Flirtatious/Playful<br>
-							</td>
-							
-							<td class="default" nowrap valign="top">
-								<input type="checkbox" name="PersonalityTrait" value="Friendly/Kind" > Friendly/Kind<br>
-								<input type="checkbox" name="PersonalityTrait" value="High Energy" > High Energy<br>
-								<input type="checkbox" name="PersonalityTrait" value="High Maintenance" > High Maintenance<br>
-								<input type="checkbox" name="PersonalityTrait" value="Humorous/Witty" > Humorous/Witty<br>
-								<input type="checkbox" name="PersonalityTrait" value="Intellectual" > Intellectual<br>
-								<input type="checkbox" name="PersonalityTrait" value="Low Maintenance" > Low Maintenance<br>
-								<input type="checkbox" name="PersonalityTrait" value="Sensitive/Nurturing/Loving" > Sensitive/Nurturing/Loving<br>
-								<input type="checkbox" name="PersonalityTrait" value="Outgoing" > Outgoing<br>
-								<input type="checkbox" name="PersonalityTrait" value="Practical" > Practical<br>
-								<input type="checkbox" name="PersonalityTrait" value="Procrastinator" > Procrastinator<br>
-							</td>
-							
-							<td class="default" nowrap valign="top">
-								<input type="checkbox" name="PersonalityTrait" value="Quiet/Shy" > Quiet/Shy<br>
-								<input type="checkbox" name="PersonalityTrait" value="Romantic" > Romantic<br>
-								<input type="checkbox" name="PersonalityTrait" value="Self Confident" > Self Confident<br>
-								<input type="checkbox" name="PersonalityTrait" value="Serious/Responsible" > Serious/Responsible<br>
-								<input type="checkbox" name="PersonalityTrait" value="Simple" > Simple<br>
-								<input type="checkbox" name="PersonalityTrait" value="Sophisticated/Worldly" > Sophisticated/Worldly<br>
-								<input type="checkbox" name="PersonalityTrait" value="Spiritual" > Spiritual<br>
-								<input type="checkbox" name="PersonalityTrait" value="Stubborn" > Stubborn<br>
-								<input type="checkbox" name="PersonalityTrait" value="Talkative" > Talkative<br>
-								<input type="checkbox" name="PersonalityTrait" value="Unconventional/Free-Spirited" > Unconventional/Free-Spirited<br>
-							</td>
-							
-							<td class="default" nowrap valign="top"></td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			
-			<tr>
-				<td colspan=3>&nbsp;</td>
-			</tr>
-			
-			<tr>
-				<td colspan=3 class="stdBold">My favorite activities</td>
-			</tr>
-			
-			<tr>
-				<td colspan=3>&nbsp;
-					<table cellpadding="0" cellspacing="0" >
-						<tr>
-							<td nowrap>
+			 	<div class="row">
+              		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h3>Edit your profile</h3>
+						<center>
+							Check all boxes below that apply to you. Don't forget to save your information by clicking on the 'Save' button at the bottom of the page
+						</center>
+					</div>
+				</div>
+				<br/>
+				<div class="row">
+              		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                		<b>My personality traits</b>
+              		</div>              
+        		</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+						<input type="checkbox" name="PersonalityTrait" value="Adventurous/Wild/Spontaneous" > Adventurous/Wild/Spontaneous<br>
+						<input type="checkbox" name="PersonalityTrait" value="Argumentative" > Argumentative<br>
+						<input type="checkbox" name="PersonalityTrait" value="Artistic" > Artistic<br>
+						<input type="checkbox" name="PersonalityTrait" value="Compulsive" > Compulsive<br>
+						<input type="checkbox" name="PersonalityTrait" value="Conservative/Clean Cut" > Conservative/Clean Cut<br>
+						<input type="checkbox" name="PersonalityTrait" value="Earthy" > Earthy<br>
+						<input type="checkbox" name="PersonalityTrait" value="Easygoing/Flexible/Open-Minded" > Easygoing/Flexible/Open-Minded<br>
+						<input type="checkbox" name="PersonalityTrait" value="Eccentric" > Eccentric<br>
+						<input type="checkbox" name="PersonalityTrait" value="Flamboyant" > Flamboyant<br>
+						<input type="checkbox" name="PersonalityTrait" value="Flirtatious/Playful" > Flirtatious/Playful<br>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+						<input type="checkbox" name="PersonalityTrait" value="Friendly/Kind" > Friendly/Kind<br>
+						<input type="checkbox" name="PersonalityTrait" value="High Energy" > High Energy<br>
+						<input type="checkbox" name="PersonalityTrait" value="High Maintenance" > High Maintenance<br>
+						<input type="checkbox" name="PersonalityTrait" value="Humorous/Witty" > Humorous/Witty<br>
+						<input type="checkbox" name="PersonalityTrait" value="Intellectual" > Intellectual<br>
+						<input type="checkbox" name="PersonalityTrait" value="Low Maintenance" > Low Maintenance<br>
+						<input type="checkbox" name="PersonalityTrait" value="Sensitive/Nurturing/Loving" > Sensitive/Nurturing/Loving<br>
+						<input type="checkbox" name="PersonalityTrait" value="Outgoing" > Outgoing<br>
+						<input type="checkbox" name="PersonalityTrait" value="Practical" > Practical<br>
+						<input type="checkbox" name="PersonalityTrait" value="Procrastinator" > Procrastinator<br>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+						<input type="checkbox" name="PersonalityTrait" value="Quiet/Shy" > Quiet/Shy<br>
+						<input type="checkbox" name="PersonalityTrait" value="Romantic" > Romantic<br>
+						<input type="checkbox" name="PersonalityTrait" value="Self Confident" > Self Confident<br>
+						<input type="checkbox" name="PersonalityTrait" value="Serious/Responsible" > Serious/Responsible<br>
+						<input type="checkbox" name="PersonalityTrait" value="Simple" > Simple<br>
+						<input type="checkbox" name="PersonalityTrait" value="Sophisticated/Worldly" > Sophisticated/Worldly<br>
+						<input type="checkbox" name="PersonalityTrait" value="Spiritual" > Spiritual<br>
+						<input type="checkbox" name="PersonalityTrait" value="Stubborn" > Stubborn<br>
+						<input type="checkbox" name="PersonalityTrait" value="Talkative" > Talkative<br>
+						<input type="checkbox" name="PersonalityTrait" value="Unconventional/Free-Spirited" > Unconventional/Free-Spirited<br>
+					</div>
+				</div>
+		
+				<br/>
+				<div class="row">
+              		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                		<b>My favourite activite</b>
+              		</div>              
+        		</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">				
 								<input type="checkbox" name="LeisureActivity" value="Antiquing" > Antiquing<br>
 								<input type="checkbox" name="LeisureActivity" value="Board Games/Backgammon/Chess" > Board Games/Backgammon/Chess<br>
 								<input type="checkbox" name="LeisureActivity" value="Camping" > Camping<br>
@@ -242,9 +276,8 @@
 								<input type="checkbox" name="LeisureActivity" value="Entertaining" > Entertaining<br>
 								<input type="checkbox" name="LeisureActivity" value="Gambling" > Gambling<br>
 								<input type="checkbox" name="LeisureActivity" value="Gardening" > Gardening<br>
-							</td>
-							
-							<td class="default" nowrap valign="top">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">	
 								<input type="checkbox" name="LeisureActivity" value="Hanging Out with Friends" > Hanging Out with Friends<br>
 								<input type="checkbox" name="LeisureActivity" value="Home Improvement/Decorating" > Home Improvement/Decorating<br>
 								<input type="checkbox" name="LeisureActivity" value="Intimate Conversations" > Intimate Conversations<br>
@@ -255,9 +288,8 @@
 								<input type="checkbox" name="LeisureActivity" value="Partying" > Partying<br>
 								<input type="checkbox" name="LeisureActivity" value="People Watching" > People Watching<br>
 								<input type="checkbox" name="LeisureActivity" value="Photography" > Photography<br>
-							</td>
-							
-							<td class="default" nowrap valign="top">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 								<input type="checkbox" name="LeisureActivity" value="Pool/Billiards/Darts" > Pool/Billiards/Darts<br>
 								<input type="checkbox" name="LeisureActivity" value="Reading/Writing" > Reading/Writing<br>
 								<input type="checkbox" name="LeisureActivity" value="Sewing/Crafts" > Sewing/Crafts<br>
@@ -268,38 +300,21 @@
 								<input type="checkbox" name="LeisureActivity" value="Video Games/Online Games" > Video Games/Online Games<br>
 								<input type="checkbox" name="LeisureActivity" value="Movies/TV" > Movies/TV<br>
 								<input type="checkbox" name="LeisureActivity" value="Wine Tasting" > Wine Tasting<br>
-							</td>
-							
-							<td class="default" nowrap valign="top"></td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			
-			<tr>
-				<td colspan=3>&nbsp;</td>
-			</tr>
-			
-			<tr>
-				<td colspan=3 class="stdBold">About the one I'm looking for...</td>
-			</tr>
-			
-			<tr>
-				<td colspan=3>&nbsp;</td>
-			</tr>
-			
-			<tr>
-				<td colspan=3><textarea name="PerfectMatchEssay" rows=4 cols=60 maxlength=2000></textarea></td>
-			</tr>
-			
-			<tr>
-				<td colspan=3>&nbsp;</td>
-			</tr>
-				
-			<tr>
-				<td align=left colspan=3><input type="submit" name="Go" value="Save"></td>
-			</tr>
-
+					</div><br/>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" style="margin-top:20px">	
+							<span colspan=3 class="stdBold">About the one I'm looking for...</span>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8"  style="margin-top:20px">	
+							<textarea name="PerfectMatchEssay" rows=4 cols=60 maxlength=2000></textarea>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"  style="margin-top:20px">	
+							<center>
+							<input type="submit" name="Go" value="Save" class="btn btn-primary">
+							</center>
+						</div>
+					</div>
+		
    <input type="hidden" name="UserName" value="<%= userName %>" >
    <input type="hidden" name="Password" value="<%= password %>" >
    <input type="hidden" name="BirthDate_month" value="<%= dobMonth %>" >
@@ -344,10 +359,18 @@
    <input type="hidden" name="AboutMe2" value="<%= aboutMe2 %>" >
 
 		</form>
-	</table>
-</td>
-</tr>
-</table>
+				</div>
+			</div>
+		</div>
+
+</div>
+<div class="footer-outer">
+	<div class="container">
+		<div class="footer-container">
+			<h3> CSE Project</h3>
+		<div>
+	</div>
+</div>
 
 <script language=JavaScript>
 	var blnAbortValidation = false;

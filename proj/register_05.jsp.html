@@ -7,8 +7,12 @@
 	<script language="JavaScript" src="im/im.js"></script>
 	<link rel="stylesheet" type="text/css" href="lib/css/as.css">
 	<link rel="stylesheet" type="text/css" href="lib/css/common.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<body marginheight=0 marginwidth=0 topmargin=0 leftmargin=0 text="#000000" bgcolor="#ffffff"  >
+<body>
 <%
    String userName = request.getParameter( "UserName" );
    String password = request.getParameter( "Password" );
@@ -68,120 +72,166 @@
    String aboutMatch = request.getParameter( "PerfectMatchEssay" );
 %>
 
-<table bgcolor="#EFEFFF" border=2 cellspacing=2 cellpadding=2>
-<TR>
-   <TD>You have entered: </TD>
-</TR>
+<div class="container"> 
+            <div class="row">
+            	<div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+            	             	 <div class="row">
+              		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                		<center><H4>You have entered</H4></center>
+              		</div>              
+        		</div> <br/>
+        		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">User Name</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= userName %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Password</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= password %></div>
+         		</div>
+				<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Date of Birth</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= dobMonth %>/<%= dobDay %>/<%= dobYear %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Email</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= email %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Gender</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= gender %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Seeking</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= seekingGender %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Country</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= country %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">State</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= state %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">City</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= city %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Zip</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= zip %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">About Me</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= aboutMe1 %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Upload Picture</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= picturePath %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Height</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= height %>cm</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Weight</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= weight %>gms</div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Emphasis Of Studies</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= study %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Relocate for the right person</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= relocate %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Profile Headline</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= headline %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Occupation</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= occupation %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Occupation Description</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= occupationDescription %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Area I Grew Up In</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= grewUpIn %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Zodiac Sign</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= zodiacSign %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Languages I speak</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= languages %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">I am seeking</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= relationType %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Marital Status</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= maritalStatus %></div>
+         		</div>
+    			<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Hair Color</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= hairColor %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Annual Income</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= income %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Education Level</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= education %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Body Build</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= bodyType %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">How important is appearance</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= appearanceImportance %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Religion</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= religion %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Eye Color</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= eyes %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Ethnicity</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= ethnicity %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Political View</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= politics %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Intelligence</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= intelligenceImportance %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Smoking Habits</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= smoking %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Activity Level</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= activity %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Children</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= hasChildren %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Drinking Habits</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= drinking %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Want Children</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= wantsChildren %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Personality</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= aboutMe2 %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Personality Trai</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= personalityTrait %></div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">Favorite Activities</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= leisure %></div>
+         		</div>
+         		<div class="row">
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">About the person I am looking for</div>
+               		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><%= aboutMatch %></div>
+         		</div>
+         		<br/>
+         		 <div class="row">
+              		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                		<center><span class="message" >Saved Step 3</span></center>
+              		</div>              
+        		</div> <br/>
 
-<TR>
-   <TD>
-      <B>User Name: </B><I><%= userName %></I><BR>
-      <B>Password: </B><I><%= password %></I><BR>
-      <B>Date of Birth: </B><I><%= dobMonth %>/<%= dobDay %>/<%= dobYear %></I><BR>
-      <B>Email: </B><I><%= email %></I><BR>
-      <B>Gender: </B><I><%= gender %></I><BR>
-      <B>Seeking: </B><I><%= seekingGender %></I><BR>
-      <B>Country: </B><I><%= country %></I><BR>
-      <B>State: </B><I><%= state %></I><BR>
-      <B>City: </B><I><%= city %></I><BR>
-      <B>Zip: </B><I><%= zip %></I><BR>
-      <B>About Me: </B><I><%= aboutMe1 %></I><BR>
-      <B>Upload Picture: </B><I><%= picturePath %></I><BR>
-   </TD>
-
-   <TD>
-      <B>Height: </B><I><%= height %> cm</I><BR>
-      <B>Weight: </B><I><%= weight %> grams</I><BR>
-      <B>Emphasis Of Studies: </B><I><%= study %></I><BR>
-      <B>Relocate for the right person: </B><I><%= relocate %></I><BR>
-      <B>Profile Headline: </B><I><%= headline %></I><BR>
-      <B>Occupation: </B><I><%= occupation %></I><BR>
-      <B>Occupation Description: </B><I><%= occupationDescription %></I><BR>
-      <B>Area I Grew Up In: </B><I><%= grewUpIn %></I><BR>
-      <B>Zodiac Sign: </B><I><%= zodiacSign %></I><BR>
-      <B>Languages I speak: </B><I><%= languages %></I><BR>
-      <B>I am seeking: </B><I><%= relationType %></I><BR>
-      <B>Marital Status: </B><I><%= maritalStatus %></I><BR>
-   </TD>
-
-   <TD>
-      <B>Hair Color: </B><I><%= hairColor %></I><BR>
-      <B>Annual Income: </B><I><%= income %></I><BR>
-      <B>Education Level: </B><I><%= education %></I><BR>
-      <B>Body Build: </B><I><%= bodyType %></I><BR>
-      <B>How important is appearance: </B><I><%= appearanceImportance %></I><BR>
-      <B>Religion: </B><I><%= religion %></I><BR>
-      <B>Eye Color: </B><I><%= eyes %></I><BR>
-      <B>Ethnicity: </B><I><%= ethnicity %></I><BR>
-      <B>Political View: </B><I><%= politics %></I><BR>
-      <B>Intelligence: </B><I><%= intelligenceImportance %></I><BR>
-      <B>Smoking Habits: </B><I><%= smoking %></I><BR>
-      <B>Activity Level: </B><I><%= activity %></I><BR>
-      <B>Children: </B><I><%= hasChildren %></I><BR>
-      <B>Drinking Habits: </B><I><%= drinking %></I><BR>
-      <B>Want Children: </B><I><%= wantsChildren %></I><BR>
-      <B>Personality: </B><I><%= aboutMe2 %></I><BR>
-      <B>Personality Trait: </B><I><%= personalityTrait %></I><BR>
-      <B>Favorite Activities: </B><I><%= leisure %></I><BR>
-      <B>About the person I am looking for: </B><I><%= aboutMatch %></I><BR>
-   </TD>
-</TR>
-</TABLE>
-
-<center>
-
-<table cellspacing="0" cellpadding="0" border="0" >
-	<tr>
-		<td valign="top">
-			<table width="100%" border='0' cellspacing="0" cellpadding="0" >
-				<tr>
-					<td class="message">
-						<table width="100%" class="message" cellpadding="0" cellspacing="0" >
-							<tr>
-								<td>
-									<table width="100%" cellpadding="0" cellspacing="0" >
-										<tr>
-											<td>
-												<table width="100%" border='5' cellpadding="5" cellspacing="5" >
-													<tr>
-														<td>
-                                                        	<img src="images/page_message.gif" width="20" height="20"></td>
-														<td class="message" >Saved Step 3</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
 			<a name="Interests"></a><br>
-			<table width="100%" border='5' cellpadding="5" cellspacing="5" >
 				<form name="step4form" method="post" action="register_06.jsp" onSubmit="return validateFormstep4form()">
-					<tr>
-						<td colspan="3"><img src="images/topline.gif" width="369" height="26" border="0"></td>
-					</tr>
-					
-					<tr>
-						<td colspan=3>Check all boxes below that apply to you. Don't forget to save your information by clicking on the 'Save' button at the bottom of the page.</td>
-					</tr>
-					
-					<tr>
-						<td colspan=3>&nbsp;</td>
-					</tr>
-		
-					<tr>
-						<td colspan=3 class="stdBold">Your Favorite Cuisines:</td>
-					</tr>
-					
-					<tr>
-						<td colspan=3>&nbsp;
-							<table cellpadding="0" cellspacing="0" >
-								<tr>
-									<td>
+				<div class="row">
+              		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                		<center><h6>Check all boxes below that apply to you. Don't forget to save your information by clicking on the 'Save' button at the bottom of the page</h6></center>
+              		</div>              
+        		</div> 	
+				<br/>
+				<div class="row">
+              		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                		<b>Your Favorite Cuisines</b>
+              		</div>              
+        		</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 										<input type="checkbox" name="Cuisine" value="American" > American<br>
 										<input type="checkbox" name="Cuisine" value="Barbecue" > Barbecue<br>
 										<input type="checkbox" name="Cuisine" value="Cajun/Southern" > Cajun/Southern<br>
@@ -192,9 +242,8 @@
 										<input type="checkbox" name="Cuisine" value="Deli" > Deli<br>
 										<input type="checkbox" name="Cuisine" value="Eastern-European" > Eastern-European<br>
 										<input type="checkbox" name="Cuisine" value="Fast Food/Pizza" > Fast Food/Pizza<br>
-									</td>
-
-									<td class="default" valign="top">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 										<input type="checkbox" name="Cuisine" value="French" > French<br>
 										<input type="checkbox" name="Cuisine" value="German" > German<br>
 										<input type="checkbox" name="Cuisine" value="Greek" > Greek<br>
@@ -205,9 +254,8 @@
 										<input type="checkbox" name="Cuisine" value="Korean" > Korean<br>
 										<input type="checkbox" name="Cuisine" value="Mediterranean" > Mediterranean<br>
 										<input type="checkbox" name="Cuisine" value="Mexican" > Mexican<br>
-									</td>
-
-									<td class="default" valign="top">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 										<input type="checkbox" name="Cuisine" value="Middle Eastern" > Middle Eastern<br>
 										<input type="checkbox" name="Cuisine" value="Seafood" > Seafood<br>
 										<input type="checkbox" name="Cuisine" value="Soul Food" > Soul Food<br>
@@ -218,27 +266,16 @@
 										<input type="checkbox" name="Cuisine" value="Vegetarian/Organic" > Vegetarian/Organic<br>
 										<input type="checkbox" name="Cuisine" value="Vegan" > Vegan<br>
 										<input type="checkbox" name="Cuisine" value="Vietnamese" > Vietnamese<br>
-									</td>
-
-									<td class="default" valign="top"></td>
-								</tr>
-							</table>
-			</td>
-		</tr>
-		
-		<tr>
-			<td colspan=3>&nbsp;</td>
-		</tr>
-		
-		<tr>
-			<td colspan=3 class="stdBold">Your Favorite Music:</td>
-		</tr>
-		
-		<tr>
-			<td colspan=3>&nbsp;
-				<table cellpadding="0" cellspacing="0" >
-					<tr>
-						<td>
+					</div>
+				</div>
+				<br/>
+				<div class="row">
+              		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                		<b>Your Favorite Music</b>
+              		</div>              
+        		</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<input type="checkbox" name="Music" value="Alternative" > Alternative<br>
 							<input type="checkbox" name="Music" value="Big Band/Swing" > Big Band/Swing<br>
 							<input type="checkbox" name="Music" value="Blues" > Blues<br>
@@ -249,9 +286,8 @@
 							<input type="checkbox" name="Music" value="Dance/Electronica" > Dance/Electronica<br>
 							<input type="checkbox" name="Music" value="Disco" > Disco<br>
 							<input type="checkbox" name="Music" value="Easy Listening" > Easy Listening<br>
-						</td>
-						
-						<td class="default" valign="top">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<input type="checkbox" name="Music" value="Folk" > Folk<br>
 							<input type="checkbox" name="Music" value="Hard Rock & Metal" > Hard Rock & Metal<br>
 							<input type="checkbox" name="Music" value="Jazz" > Jazz<br>
@@ -262,9 +298,8 @@
 							<input type="checkbox" name="Music" value="Opera" > Opera<br>
 							<input type="checkbox" name="Music" value="Pop/Top 40" > Pop/Top 40<br>
 							<input type="checkbox" name="Music" value="Rap/Hip Hop" > Rap/Hip Hop<br>
-						</td>
-						
-						<td class="default" valign="top">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<input type="checkbox" name="Music" value="Reggae" > Reggae<br>
 							<input type="checkbox" name="Music" value="Showtunes" > Showtunes<br>
 							<input type="checkbox" name="Music" value="Soul/R&B" > Soul/R&B<br>
@@ -275,63 +310,44 @@
 							<input type="checkbox" name="Music" value="Acoustic" > Acoustic<br>
 							<input type="checkbox" name="Music" value="Indie" > Indie<br>
 							<input type="checkbox" name="Music" value="Other" > Other<br>
-						</td>
-						
-						<td class="default" valign="top"></td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		
-		<tr>
-			<td colspan=3>&nbsp;</td>
-		</tr>
-		
-		<tr>
-			<td colspan=3 class="stdBold">You like to read:</td>
-		</tr>
-		
-		<tr>
-			<td colspan=3>&nbsp;
-				<table cellpadding="0" cellspacing="0" >
-					<tr>
-						<td>
+					</div>
+				</div>	
+				<br/>
+				<div class="row">
+              		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                		<b>You like to read</b>
+              		</div>              
+        		</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">		
 							<input type="checkbox" name="Reading" value="Fiction" > Fiction<br>
 							<input type="checkbox" name="Reading" value="Magazines" > Magazines<br>
 							<input type="checkbox" name="Reading" value="Newspapers" > Newspapers<br>
-						</td>
-						
-						<td class="default" valign="top">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">	
 							<input type="checkbox" name="Reading" value="Non-Fiction" > Non-Fiction<br>
 							<input type="checkbox" name="Reading" value="Poetry" > Poetry<br>
 							<input type="checkbox" name="Reading" value="Trade Journals" > Trade Journals<br>
-						</td>
-						
-						<td class="default" valign="top">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">	
 							<input type="checkbox" name="Reading" value="Comics" > Comics<br>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		
-		<tr>
-			<td colspan=3>&nbsp;</td>
-		</tr>
-		
-		<tr>
-			<td colspan=3 class="stdBold">My idea of the perfect first date...</td>
-		</tr>
-		
-		<tr>
-			<td colspan=3><textarea name="PerfectFirstDateEssay" rows=4 cols=60 maxlength=2000></textarea></td>
-		</tr>
-		
-		<tr>
-			<td align=left colspan=3>
-				<input type="submit" name="Go" value="Save">
-			</td>
-		</tr>
+					</div>
+				</div>
+				<br/>
+				<div class="row">
+              		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                		<b>My idea of the perfect first date...</b>
+              		</div> 
+              		<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+                		<textarea name="PerfectFirstDateEssay" rows=4 cols=60 maxlength=2000></textarea>
+              		</div>             
+        		</div>
+				<div class="row">
+              		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                		<input type="submit" name="Go" value="Save" class="btn btn-primary">
+              		</div> 
+              	</div>
+	
 
    <input type="hidden" name="UserName" value="<%= userName %>" >
    <input type="hidden" name="Password" value="<%= password %>" >
@@ -380,10 +396,18 @@
    <input type="hidden" name="PerfectMatchEssay" value="<%= aboutMatch %>" >
 
 	</form>
-</table>
-</td>
-</tr>
-</table><br>
+			</div>
+			</div>
+		</div>
+
+</div>
+<div class="footer-outer">
+	<div class="container">
+		<div class="footer-container">
+			<h3> CSE Project</h3>
+		<div>
+	</div>
+</div>
 
 <script language=JavaScript>
 

@@ -1,6 +1,7 @@
 html{
 	margin:0;
 	padding:0;
+	position: relative;
 }
 
 body{
@@ -8,6 +9,7 @@ body{
 	font-size: 12px;
 	background-image:url("images/brickwall.png");
 	background-repeat:repeat; 
+	margin-bottom: 150px;
 }
 
 
@@ -18,6 +20,9 @@ body{
 	margin-top: 30px;
 	background-color: #111 !important;
 	width: 100%;
+	position: absolute;
+	height: 80px;
+	bottom:0;
 }
 
 .footer-container{

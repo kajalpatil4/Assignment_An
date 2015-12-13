@@ -2,13 +2,13 @@
 
 <html>
 <head>
-  <title>CSE220 Final Project</title>
-  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=windows-1252">
-  <script language="JavaScript" src="javascript/matchnet.js"></script>
-  <script language="JavaScript" src="javascript/region3.js"></script>
-  <script language="JavaScript" src="im/im.js"></script>
-  <link rel="stylesheet" type="text/css" href="lib/css/as.css">
-  <link rel="stylesheet" type="text/css" href="lib/css/common.css">
+	<title>CSE220 Final Project</title>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=windows-1252">
+	<script language="JavaScript" src="javascript/matchnet.js"></script>
+	<script language="JavaScript" src="javascript/region3.js"></script>
+	<script language="JavaScript" src="im/im.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/css/as.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/common.css">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -100,7 +100,7 @@
    try
    {
       Class.forName("com.mysql.jdbc.Driver").newInstance();
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/contacts?user=kareena&password=kapoor");
+	  Connection con = DriverManager.getConnection("jdbc:mysql://localhost/contacts?user=kareena&password=kapoor");
       Statement s = con.createStatement();      
       ResultSet rs = s.executeQuery(sql);
 
